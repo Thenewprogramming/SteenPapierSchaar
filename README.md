@@ -1,4 +1,4 @@
-HOI
+Steen Papier Schaar
 ===
 
-asdfvfadurghaerg
+I've made a small python multiplayer game.

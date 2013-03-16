@@ -97,13 +97,13 @@ class SecondaryFrame(wx.Frame):
 			self.OutputText.SetLabel( "the winner is %s" % self.winner)
 			self.OutputText.SetLabel( "%s has %d and %s has %d as score.\n" % (self.user_name1, self.serverscore, self.user_name2, self.clientscore))
 
-	elif self.client:
-		self.winner = self.s.recv(1024)
-		self.winner = self.winner.split(';',2)
-		self.OutputText.SetLabel( "the winner is %s" % self.winner[0])
-		self.clientscore = int(self.winner[1])
-		self.serverscore = int(self.winner[2])
-		self.OutputText.SetLabel( "%s has %d and %s has %d as score.\n" % (self.user_name1, self.clientscore, self.user_name2, self.serverscore))
+		elif self.client:
+			self.winner = self.s.recv(1024)
+			self.winner = self.winner.split(';',2)
+			self.OutputText.SetLabel( "the winner is %s" % self.winner[0])
+			self.clientscore = int(self.winner[1])
+			self.serverscore = int(self.winner[2])
+			self.OutputText.SetLabel( "%s has %d and %s has %d as score.\n" % (self.user_name1, self.clientscore, self.user_name2, self.serverscore))
 
 
 	self.steenBtn.Show()

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import random, os, sys, socket
 from time import sleep
 

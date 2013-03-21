@@ -107,9 +107,9 @@ class SecondaryFrame(wx.Frame):
 			self.OutputText.SetLabel( "%s has %d and %s has %d as score.\n" % (self.user_name1, self.clientscore, self.user_name2, self.serverscore))
 
 
-	self.steenBtn.Show()
-	self.papierBtn.Show()
-	self.schaarBtn.Show()
+		self.steenBtn.Show()
+		self.papierBtn.Show()
+		self.schaarBtn.Show()
 
 
 
